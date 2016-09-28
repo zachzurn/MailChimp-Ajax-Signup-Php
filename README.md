@@ -7,11 +7,12 @@ Mailchimp Submission Plugin by Zach Zurn.
 ## Example bare minimum form:
 
 Include the script and jQuery on your page and create a form as shown below. No additional Javascript is needed.
-
-    <form action="/assets/mailchimp/" novalidate data-mailchimp="LIST-ID-GOES-HERE" data-redirect="URL-TO-REDIRECT-ON-SUCCESS">
-        <input type="text" placeholder="Name" id="name" name="name" required data-validation-required-message="Please enter your name" />
-        <input type="email" placeholder="Email Address" id="email" name="email" email data-validation-email-message="Please enter a valid email address" required data-validation-required-message="Please enter your email address" />
-    </form>
+```HTML
+<form action="/assets/mailchimp/" novalidate data-mailchimp="LIST-ID-GOES-HERE" data-redirect="URL-TO-REDIRECT-ON-SUCCESS">
+    <input type="text" placeholder="Name" id="name" name="name" required data-validation-required-message="Please enter your name" />
+    <input type="email" placeholder="Email Address" id="email" name="email" email data-validation-email-message="Please enter a valid email address" required data-validation-required-message="Please enter your email address" />
+</form>
+```
 
 The 'data-mailchimp' attribute tells the plugin to use this form for mailchimp submissions and should have the list id as it's attribute.
 
@@ -25,11 +26,15 @@ These are the required fields for mailchimp. Any additional fields will be added
 
 In this example 'da3efd8270' is the interest id.
 
-    <input type="checkbox" name="interest-da3efd8270" id="interest-da3efd8270"><label for="interest-da3efd8270"> Host</label>
+```HTML
+<input type="checkbox" name="interest-da3efd8270" id="interest-da3efd8270"><label for="interest-da3efd8270"> Host</label>
+```
 
 ## Example input for custom merge_field.
 
-    <input type="text" placeholder="Describe Yourself" id="MMERGE10" name="MMERGE10" />
+```HTML
+<input type="text" placeholder="Describe Yourself" id="MMERGE10" name="MMERGE10" />
+```
 
 ## Basic Validation
 
