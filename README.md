@@ -21,7 +21,9 @@ Forms must have a field named "email" and either a field named "name" or fields 
 These are the required fields for mailchimp. Any additional fields will be added to the MailChimp merge_fields.
 
 
-## Example checkbox for subscribing to interest group shown below. 'da3efd8270' is the interest id.
+## Example checkbox for subscribing to interest group shown below.
+
+In this example 'da3efd8270' is the interest id.
 
     <input type="checkbox" name="interest-da3efd8270" id="interest-da3efd8270"><label for="interest-da3efd8270"> Host</label>
 
